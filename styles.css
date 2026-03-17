@@ -1,0 +1,29 @@
+body {
+    background:gray;
+}
+.wrapper{
+    width:90%;
+    margin: auto;
+}
+.wrapper div{
+    background:white;
+    height:200px;
+    margin-bottom: 15px;
+}
+/* END mobile styles */
+/* start tablet size styles */
+@media only screen and (min-width:700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+    }
+    .wrapper div{
+        margin:15px;
+    }
+}/* END tablet size styles */
+/* start desktop size styles */
+@media only screen and (min-width:1500px){
+    .wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}/* start desktop size styles */
